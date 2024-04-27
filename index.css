@@ -87,6 +87,7 @@ aside h3 {
 
 aside {
   background: url(img/monitores.jpg); /* <!--Imagen de Drazen Zigic en Freepik-->*/
+  background-color: blue;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto;
