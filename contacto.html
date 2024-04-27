@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    
+    <!-- biblioteca de iconos   -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="cabecera">
+       
+          <!-- Redes sociales-->
+<section>
+    <a href=""></a>
+    <ul class="RRSS">
+        <li>
+            <a href="#"></a>
+            <ion-icon name="logo-instagram"></ion-icon>
+        </li>
+        <li>
+            <a href="#"></a>
+            <ion-icon name="logo-tiktok"></ion-icon>
+        </li>
+        <li>
+            <a href="#"></a>
+            <ion-icon name="logo-facebook"></ion-icon>
+        </li>
+    </ul>
+    <h2 class="logo"> Élite Fitness Club </h2>
+</section>
+    </header>
+    <!--Barra de navegacion por la web -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="quienes somos.htm">Quienes Somos</a>
+            </li>
+            <li><a href="#">Localización</a></li>
+            <li><a href="#">Promociones </a>
+                <ul>
+                    <li><a href="#">Promoción del mes</a></li>
+                    <li><a href="#">Membresías</a></li>
+                    <li><a href="#"> Programa amigo</a></li>
+                </ul>
+            </li>
+            <li><a href="ofertadeportiva.html"> Oferta deportiva</a>
+                <ul>
+                    <li><a href="#">Crossfit</a></li>
+                    <li><a href="#">Musculación</a></li>
+                    <li><a href="#">G.A.P</a></li>
+                    <li><a href="#">Spinnig</a></li>
+                    <li><a href="#">Pilates</a></li>
+                    <li><a href="#">Pole Dance</a></li>
+                    <li><a href="#"></a>Yoga</li>
+                    <li><a href="#"></a>Club V.I.P</li>
+                    
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+<div class="container_form">
+
+    <form class="formulario" action="mailto:aepinosa894@gmail.com" method="post" name="formulario">
+        <fieldset class="bordeform">
+            <legend id="nform">En que podemos ayudarte??</legend>
+            <fieldset>
+                <legend class="titform">NOMBRE Y APELLIDOS (*) </legend>
+                Nombre: <input type="text" name="name" id="" required placeholder="Introduzca su nombre">
+                Apellidos: <input type="text" name="apellidos" id="" required placeholder="Introduzca sus apellidos">
+                <br>
+                DNI: <input type="text" name="dni" id="" placeholder="Introduzca su NIF/CIF">
+                <br>
+                e-mail: <input type="email" name="mail" id="" required placeholder="Introduzca su email">
+                Telefono: <input class="relleno" type="text" name="tfn" id="" min="9" max="9" required placeholder="Ej:666 666 666">
+                Horario de contacto
+                <select name="" id="">
+                    <option value="1">Mañana</option>
+                    <option value="2">Tarde</option>
+                    <option value="3">Indiferente</option>
+                </select>
+                <input  type="radio" name="genero" id="">Hombre
+                <input  type="radio" name="genero" id="">Mujer
+                <input  type="radio" name="genero" id="">Otro <input type="text" name="genero" id="" placeholder="Ej: binario, nobinario...">
+                <br>
+                Fecha de nacimiento <input type="date" name="" id="" required >
+            </fieldset>
+            <fieldset>
+                <legend class="titform">DIRECCION POSTAL </legend>
+                Tipo: <input type="text" name="calle" id="" placeholder="Calle, Avenida....">
+                Calle: <input type="text" name="calle" id="" placeholder="Nombre">
+                <br>
+                Número: <input type="text" name="n" id="" placeholder="Ej: 75">
+                <br>
+                Piso: <input type="text" name="piso" id="" placeholder="Ej: 1">
+                Letra: <input type="text" name="piso" id="" placeholder="Ej:B">
+                Otro: <input type="text" name="piso" id="" placeholder="Ej: puerta, escalera...">
+                <br>
+                Código postal: <input class="relleno" type="text" name="cp" id="" placeholder="Ej:28036">
+            </fieldset>
+            <fieldset>
+                <legend class="titform"> En que actividad estás interesad@? </legend>
+                <input type="checkbox" name="actividad" id="" > Crossfit
+                <input type="checkbox" name="actividad" id="" checked> Musculación
+                <input type="checkbox" name="actividad" id="" > G.A.P
+                <input type="checkbox" name="actividad" id="" > Spinnig
+                <br><input type="checkbox" name="actividad" id="" > Pilates
+                <input type="checkbox" name="actividad" id="" > Yoga
+                <input type="checkbox" name="actividad" id="" > Poledance
+                <input type="checkbox" name="actividad" id="" > Club V.I.P
+            </fieldset>
+            <fieldset>
+                <legend class="titform"> Alguna otra duda?</legend>
+                <br>
+                <textarea name="opinion usuario" id="" cols="30" rows="10" minlength="35" maxlength="400" 
+                placeholder="Necesitaria información sobre..."></textarea>
+            </fieldset>
+        </fieldset>
+        <input type="checkbox" name="actividad" id="" checked > Acepto recibir información Comercial
+        <br><input type="checkbox" name="actividad" id="" checked> He leído y acepto la política de privacidad: https://tu-url.com/politica-privacidad
+        
+        <br>
+        <br>
+        <br>
+        
+        <input type="submit">
+        <input type="reset">
+        <input type="file" name="" id="" value="Adjuntar Archivos" accept=".jpg, .png" multiple>
+    </form>
+      
+    <!-- Creo que no me queda ningun campo del formulario por añadir   -->
+
+    </div>
+
+<!-- píe de pagina  -->
+<footer class="derechos"> 
+    <p>&copy; Actividad 3 de Lenguaje De Marcas creadada por Alberto Armas y Arantza Espinosa</p>
+ </footer>
+</body>
+</html>
+
+
+
+
+
