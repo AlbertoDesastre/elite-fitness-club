@@ -1,3 +1,7 @@
+/* Este archivo representa los estilos generales de la web. 
+Cualquier estilo que necesite más especifidad se encuentra en la carpeta con su página correspondiente
+*/
+
 /* tipografías importadas de Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
@@ -8,14 +12,6 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-/* fondo de pagina */
-body {
-  background-image: url(img/cabecera.jpg); /* pensé en poner esta solo en la cabecera pero queda mejor como fondo*/
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: auto;
-  background-position: center;
-}
 
 ul {
   list-style: none;
@@ -23,39 +19,74 @@ ul {
 header {
   background-color: hotpink;
 }
-/* iconos rrss*/
 
-/* menú desplegable*/
+nav,
+nav ul li a,
+.main h1 a:hover {
+  background-color: rgba(244, 21, 162);
+}
 
-nav li a {
+/* Iconos RRSS*/
+.rrss li {
+  float: right;
+  padding: 5px;
+}
+
+.rrss li a {
+  text-decoration: none;
+}
+
+/* Menú desplegable*/
+nav ul {
+  /* El display flex es un tipo de display que te permite hacer a un CONTENEDOR flexible.
+    Dependiendo de lo que buscas, principalmente con justify/align puedes alinear como gustes a los hijos del contenedor
+    En este caso, alineamos por defecto a sus hijos en horizontal y le pedimos que haya un espacio equivalente entre todos los elementos */
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
   background-color: rgba(244, 21, 162, 0.652);
+  width: 100%;
   color: white;
   text-decoration: none;
   padding: 10px 20px;
-  display: block;
-}
-/* efecto boton*/
-nav li a:hover {
-  background-color: hotpink;
-}
-
-nav li {
-  float: left;
+  display: inline-block;
+  text-align: center;
 }
 
 nav li ul {
   display: none;
-  position: absolute;
-  min-width: 200px;
 }
 
-nav li:hover > ul {
+/* efecto boton*/
+nav ul li:hover > ul {
   display: block;
+  background-color: hotpink;
+}
+
+.submenu {
+  position: absolute;
+}
+
+.submenu:nth-of-type(1) {
+  width: 138px;
+}
+
+.submenu:nth-of-type(1) {
+  width: 163px;
+}
+
+.submenu li {
+  width: 100%;
 }
 
 /* englobamos unos estilos repetidos, el "aside h3" tendrá un estilo ligeramente diferente más tarde.
-Se aplicarán porque ese "aside h3" tiene el efecto cascada, porque está más abajo en el archivo
-*/
+Se aplicarán porque ese "aside h3" tiene el efecto cascada, porque está más abajo en el archivo */
 .logo,
 .main h1,
 .main h1 a,
@@ -79,22 +110,59 @@ aside h3 {
 }
 
 .main h1 a:hover {
-  background-color: rgba(244, 21, 162, 0.652);
   color: gold;
 }
 
-/* CSS para aside */
+/* Estilos específicos de HOME (o index.html) */
 
+.banner-img-container img {
+  width: 100%;
+  height: 500px;
+}
+
+/* Sección principal */
+.main {
+  min-width: 400px;
+  width: 60%;
+  display: inline-block;
+}
+
+.main article {
+  margin-left: 10px;
+}
+
+.otros-articulos,
+.otros-articulos li >,
+.publi {
+  display: inline-block;
+}
+
+.otros-articulos article {
+  margin-top: 5px;
+}
+
+.otros-articulos li img {
+  float: left;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.publi {
+  background-color: red;
+}
+
+/* Comienza el aside */
 aside {
-  background: url(img/monitores.jpg); /* <!--Imagen de Drazen Zigic en Freepik-->*/
-  background-color: blue;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: auto;
-  background-position: center;
+  height: 100%;
+  width: 40%;
+  float: right;
   color: black;
   text-align: center;
-  position: relative;
+
+  background: url(./assets/img/monitores.jpg); /* <!--Imagen de Drazen Zigic en Freepik-->*/
+  background-size: cover;
+  background-position: center;
 }
 
 aside h3 {
@@ -103,6 +171,7 @@ aside h3 {
 /* CSS para pie de página*/
 
 footer {
+  background-color: black;
   color: white;
   text-align: center;
   font-family: "Open Sans", sans-serif;

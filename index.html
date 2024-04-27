@@ -25,75 +25,82 @@
     <header class="cabecera">
       <!-- Redes sociales-->
       <section>
-        <ul class="RRSS">
+        <ul class="rrss">
           <li>
-            <a href="#"></a>
-            <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://www.instagram.com/">
+              <ion-icon name="logo-instagram"></ion-icon
+            ></a>
           </li>
           <li>
-            <a href="#"></a>
-            <ion-icon name="logo-tiktok"></ion-icon>
+            <a href="https://www.tiktok.com/es/">
+              <ion-icon name="logo-tiktok"></ion-icon
+            ></a>
           </li>
           <li>
-            <a href="#"></a>
-            <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.facebook.com/">
+              <ion-icon name="logo-facebook"></ion-icon
+            ></a>
           </li>
         </ul>
         <h2 class="logo">Élite Fitness Club</h2>
       </section>
+      <!-- Revisar al final si es correcto que este nav se encuentre aquí en base a la especificación -->
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="./pages/quienes-somos/quienes-somos.html">Quienes Somos</a>
+          </li>
+          <li><a href="#">Localización</a></li>
+          <li>
+            <a href="#">Promociones </a>
+            <!-- submenu -->
+            <ul class="submenu">
+              <li><a href="#">Promoción del mes</a></li>
+              <li><a href="#">Membresías</a></li>
+              <li><a href="#"> Programa amigo</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./pages/oferta-deportiva/ofertadeportiva.html">
+              Oferta deportiva</a
+            >
+            <!-- submenu -->
+            <ul class="submenu">
+              <li><a href="#">Crossfit</a></li>
+              <li><a href="#">Musculación</a></li>
+              <li><a href="#">G.A.P</a></li>
+              <li><a href="#">Spinnig</a></li>
+              <li><a href="#">Pilates</a></li>
+              <li><a href="#">Pole Dance</a></li>
+              <li><a href="#">Yoga</a></li>
+              <li><a href="#">Club V.I.P</a></li>
+            </ul>
+          </li>
+          <li><a href="./pages/contacto/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <!--Barra de navegacion por la web -->
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="./pages/quienes-somos/quienes-somos.html">Quienes Somos</a>
-        </li>
-        <li><a href="#">Localización</a></li>
-        <li>
-          <a href="#">Promociones </a>
-          <ul>
-            <li><a href="#">Promoción del mes</a></li>
-            <li><a href="#">Membresías</a></li>
-            <li><a href="#"> Programa amigo</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="./pages/oferta-deportiva/ofertadeportiva.html">
-            Oferta deportiva</a
-          >
-          <ul>
-            <li><a href="#">Crossfit</a></li>
-            <li><a href="#">Musculación</a></li>
-            <li><a href="#">G.A.P</a></li>
-            <li><a href="#">Spinnig</a></li>
-            <li><a href="#">Pilates</a></li>
-            <li><a href="#">Pole Dance</a></li>
-            <li><a href="#"></a>Yoga</li>
-            <li><a href="#"></a>Club V.I.P</li>
-          </ul>
-        </li>
-        <li><a href="./pages/contacto/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
 
     <section class="main">
-      <header class="hmain">
-        <div class="img inicio">
-          <img src="./assets/img/inicio.jpg" width="500px" weight="500px" />
+      <header>
+        <div class="banner-img-container">
+          <img src="./assets/img/inicio.jpg" />
           <!--Imagen de Drazen Zigic en Freepik-->
         </div>
         <h1>
           <a href="./pages/contacto/contacto.html"
-            >No hay excusas <br />es la hora del GYM
+            >No hay excusas, <br />es la hora del GYM
           </a>
         </h1>
       </header>
+
       <article>
-        <h3>06 de Abril del 2024</h3>
-        <h4>Nuevas actividades deportivas</h4>
+        <h3>Nuevas actividades deportivas</h3>
+        <h5>06 de Abril del 2024</h5>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />Eum,
           at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad
@@ -101,7 +108,22 @@
           cumque deserunt ullam.
         </p>
       </article>
-      <footer class="pie1">
+
+      <footer class="footer-en-main">
+        <ul class="otros-articulos">
+          <h2>Otras publicaciones</h2>
+
+          <li>
+            <img src="./assets/icons/workout.png" />
+            <article>
+              <h4>Publicación</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                omnis eaque fuga eligendi.
+              </p>
+            </article>
+          </li>
+        </ul>
         <!--banner publicidad-->
         <!-- esto es el recuadro con la publicidad, que tiene una imagen de fondo, y un link random -->
         <div class="publi">
@@ -112,7 +134,7 @@
 
     <!-- Aside con más info -->
 
-    <aside class="textolateral">
+    <aside>
       <h1>APROVECHA NUESTRAS OFERTAS <br />NO ESPERES MAS</h1>
 
       <article>
@@ -141,8 +163,8 @@
     <!-- píe de pagina  -->
     <footer class="derechos">
       <p>
-        &copy; Actividad 3 de Lenguaje De Marcas creadada por Alberto Armas y
-        Arantza Espinosa
+        Actividad 3 de Lenguaje De Marcas creadada por Alberto Armas y Arantza
+        Espinosa
       </p>
     </footer>
   </body>
