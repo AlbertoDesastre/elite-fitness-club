@@ -1,135 +1,109 @@
-
 /* tipografías importadas de Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* CSS GENERAL */
-*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 /* fondo de pagina */
-body{
-    background-image: url(img/cabecera.jpg); /* pensé en poner esta solo en la cabecera pero queda mejor como fondo*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto;
-    background-position: center;
+body {
+  background-image: url(img/cabecera.jpg); /* pensé en poner esta solo en la cabecera pero queda mejor como fondo*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position: center;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-header{
-    background-color: hotpink;
+header {
+  background-color: hotpink;
 }
 /* iconos rrss*/
 
-
-
 /* menú desplegable*/
 
-.nav li a {
-    background-color: rgba(244, 21, 162, 0.652);
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
+nav li a {
+  background-color: rgba(244, 21, 162, 0.652);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
 }
 /* efecto boton*/
-.nav li a:hover{
-    background-color: hotpink;
+nav li a:hover {
+  background-color: hotpink;
 }
 
-.nav li {
-    float:left;
+nav li {
+  float: left;
 }
 
-.nav li ul{ 
-    display: none;
-    position: absolute;
-    min-width: 200px;
+nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 200px;
 }
 
-.nav li:hover >ul{
-    display: block;
+nav li:hover > ul {
+  display: block;
 }
 
-
-.logo{
-    color: rgb(255, 255, 255);
-    font-family: "Jersey 25", sans-serif;
-    font-size: 120px;
-    font-style: normal;
-    border-radius: 2px;
-    border-color: pink;
-    text-align: center;
+/* englobamos unos estilos repetidos, el "aside h3" tendrá un estilo ligeramente diferente más tarde.
+Se aplicarán porque ese "aside h3" tiene el efecto cascada, porque está más abajo en el archivo
+*/
+.logo,
+.main h1,
+.main h1 a,
+aside h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Jersey 25", sans-serif;
+  font-style: normal;
+  border-radius: 2px;
+  border-color: pink;
+  text-align: center;
 }
 
-
-.main h1 {
-    color: rgb(255, 255, 255);
-    font-family: "Jersey 25", sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    border-radius: 2px;
-    border-color: pink;
-    text-align: center;
-    text-decoration: none;
-}
-.main h1 a{
-    color: rgb(255, 255, 255);
-    font-family: "Jersey 25", sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    border-radius: 2px;
-    border-color: pink;
-    text-align: center;
-    text-decoration: none;
+.logo {
+  font-size: 120px;
 }
 
-.main h1 a:hover{
-    background-color: rgba(244, 21, 162, 0.652);
-    color: gold;
+.main h1,
+.main h1 a {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.main h1 a:hover {
+  background-color: rgba(244, 21, 162, 0.652);
+  color: gold;
 }
 
 /* CSS para aside */
 
-aside{
-    background: url(img/monitores.jpg);/* <!--Imagen de Drazen Zigic en Freepik-->*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto;
-    background-position: center;
-    color:black;
-    text-align: center;
-    position: relative;
+aside {
+  background: url(img/monitores.jpg); /* <!--Imagen de Drazen Zigic en Freepik-->*/
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position: center;
+  color: black;
+  text-align: center;
+  position: relative;
 }
 
-aside h3{
-    color: rgb(255, 255, 255);
-    font-family: "Jersey 25", sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    text-align: center;
+aside h3 {
+  font-size: 30px;
 }
 /* CSS para pie de página*/
 
-footer{
-    color: white;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
+footer {
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
