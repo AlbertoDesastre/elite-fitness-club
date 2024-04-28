@@ -1,0 +1,40 @@
+.quienes-somos-container {
+  background-color: #fffab7;
+}
+
+.quienes-somos-container img {
+  border-radius: 15px;
+  display: block;
+  width: 600px;
+
+  margin: auto;
+}
+
+.quienes-somos-container .h-resaltado {
+  color: rgba(244, 21, 162, 0.652);
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.quienes-somos-container article,
+h3.h-resaltado {
+  margin: 20px;
+}
+
+.quienes-somos-container h1.h-resaltado:hover {
+  color: Red;
+}
+
+.quienes-somos-container h3.h-resaltado {
+  display: inline-block;
+  width: 300px;
+  background-color: blue;
+  color: white;
+  font-size: 36px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.quienes-somos-container h3.h-resaltado:hover {
+  color: gold;
+}
