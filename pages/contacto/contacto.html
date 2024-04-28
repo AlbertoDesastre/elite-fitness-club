@@ -95,118 +95,144 @@
         method="post"
         name="formulario"
       >
-        <fieldset class="bordeform">
-          <legend id="nform">En que podemos ayudarte??</legend>
-          <fieldset>
-            <legend class="titform">NOMBRE Y APELLIDOS (*)</legend>
+        <legend class="h-resaltado" id="nform">
+          <h2>En que podemos ayudarte??</h2>
+        </legend>
+        <fieldset>
+          <legend class="titform">NOMBRE Y APELLIDOS (*)</legend>
+
+          <label>
             Nombre:
             <input
               type="text"
               name="name"
-              id=""
+              id="name"
               required
               placeholder="Introduzca su nombre"
             />
+          </label>
+          <label>
             Apellidos:
             <input
               type="text"
               name="apellidos"
-              id=""
+              id="apellidos"
               required
               placeholder="Introduzca sus apellidos"
             />
-            <br />
-            DNI:
-            <input
-              type="text"
-              name="dni"
-              id=""
-              placeholder="Introduzca su NIF/CIF"
-            />
-            <br />
+          </label>
+          <label>
             e-mail:
             <input
               type="email"
               name="mail"
-              id=""
+              id="email"
               required
               placeholder="Introduzca su email"
             />
+          </label>
+          <br />
+          <label>
             Telefono:
             <input
               class="relleno"
               type="text"
               name="tfn"
-              id=""
+              id="tfn"
               min="9"
               max="9"
               required
               placeholder="Ej:666 666 666"
             />
+          </label>
+          <label>
             Horario de contacto
-            <select name="" id="">
-              <option value="1">Mañana</option>
-              <option value="2">Tarde</option>
-              <option value="3">Indiferente</option>
+            <select name="" id="horario">
+              <option value="mañana">Mañana</option>
+              <option value="tarde">Tarde</option>
+              <option value="indiferente">Indiferente</option>
             </select>
-            <input type="radio" name="genero" id="" />Hombre
-            <input type="radio" name="genero" id="" />Mujer
-            <input type="radio" name="genero" id="" />Otro
+          </label>
+          <span>
+            Género
+            <label>Hombre <input type="radio" name="genero" id="" /></label>
+            <label>Mujer<input type="radio" name="genero" id="" /></label>
+            <label>Otro <input type="radio" name="genero" id="" /></label>
+          </span>
+
+          <label>
+            Fecha de nacimiento
+            <input type="date" name="" id="" min="2006-01-01" required />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="titform">DIRECCION POSTAL</legend>
+          <label>
+            Tipo
+            <select name="" id="tipo-calle">
+              <option value="calle">Calle</option>
+              <option value="bloque">Bloque</option>
+              <option value="plaza">Plaza</option>
+            </select>
+          </label>
+          <label>
+            Calle:
+            <input type="text" name="calle" id="calle" placeholder="Nombre" />
+          </label>
+
+          <label>
+            Número:
             <input
               type="text"
-              name="genero"
-              id=""
-              placeholder="Ej: binario, nobinario..."
+              name="n-calle"
+              id="n-calle"
+              placeholder="Ej: 75"
             />
-            <br />
-            Fecha de nacimiento <input type="date" name="" id="" required />
-          </fieldset>
-          <fieldset>
-            <legend class="titform">DIRECCION POSTAL</legend>
-            Tipo:
-            <input
-              type="text"
-              name="calle"
-              id=""
-              placeholder="Calle, Avenida...."
-            />
-            Calle: <input type="text" name="calle" id="" placeholder="Nombre" />
-            <br />
-            Número: <input type="text" name="n" id="" placeholder="Ej: 75" />
-            <br />
-            Piso:
-            <input type="text" name="piso" id="" placeholder="Ej: 1" /> Letra:
-            <input type="text" name="piso" id="" placeholder="Ej:B" /> Otro:
-            <input
-              type="text"
-              name="piso"
-              id=""
-              placeholder="Ej: puerta, escalera..."
-            />
-            <br />
-            Código postal:
+          </label>
+          <label>
+            C.Postal:
             <input
               class="relleno"
               type="text"
               name="cp"
-              id=""
+              id="cp"
               placeholder="Ej:28036"
             />
+          </label>
+        </fieldset>
+
+        <div class="mini-fieldsets-container">
+          <fieldset class="deportes">
+            <legend class="titform">¿En que actividad estás interesad@?</legend>
+            <label
+              ><input type="checkbox" name="crossfit" id="crossfit" />Crossfit
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="musculacion"
+                id="musculacion"
+                checked
+              />Musculación</label
+            >
+            <label> <input type="checkbox" name="gap" id="gap" />G.A.P </label>
+            <label>
+              <input type="checkbox" name="spinning" id="spinning" />Spinning
+            </label>
+            <label>
+              <input type="checkbox" name="actividad" id="" />Pilates
+            </label>
+            <label> <input type="checkbox" name="yoga" id="yoga" />Yoga</label>
+            <label>
+              <input type="checkbox" name="poledance" id="poledance" />Poledance
+            </label>
+            <label>
+              <input type="checkbox" name="vip" id="vip" />Club V.I.P
+            </label>
           </fieldset>
-          <fieldset>
-            <legend class="titform">En que actividad estás interesad@?</legend>
-            <input type="checkbox" name="actividad" id="" /> Crossfit
-            <input type="checkbox" name="actividad" id="" checked /> Musculación
-            <input type="checkbox" name="actividad" id="" /> G.A.P
-            <input type="checkbox" name="actividad" id="" /> Spinnig
-            <br /><input type="checkbox" name="actividad" id="" /> Pilates
-            <input type="checkbox" name="actividad" id="" /> Yoga
-            <input type="checkbox" name="actividad" id="" /> Poledance
-            <input type="checkbox" name="actividad" id="" /> Club V.I.P
-          </fieldset>
-          <fieldset>
+          <fieldset class="opentext">
             <legend class="titform">Alguna otra duda?</legend>
-            <br />
+
             <textarea
               name="opinion usuario"
               id=""
@@ -217,31 +243,51 @@
               placeholder="Necesitaria información sobre..."
             ></textarea>
           </fieldset>
+        </div>
+
+        <fieldset>
+          <input
+            type="checkbox"
+            name="actividad"
+            id="info-comercial"
+            checked
+            required
+          />
+          <label for="info-comercial"
+            >Acepto recibir información Comercial</label
+          >
+
+          <br />
+
+          <input
+            type="checkbox"
+            name="actividad"
+            id="privacidad"
+            checked
+            required
+          />
+          <label for="privacidad">
+            He leído y acepto la política de privacidad:
+            https://tu-url.com/politica-privacidad</label
+          >
+
+          <br />
+          <br />
+
+          <label for="archivo" id="archivo-label"> Adjuntar DNI</label>
+          <input
+            style="visibility: hidden"
+            type="file"
+            id="archivo"
+            accept=".jpg, .png"
+            multiple
+          />
         </fieldset>
-        <input type="checkbox" name="actividad" id="" checked /> Acepto recibir
-        información Comercial <br /><input
-          type="checkbox"
-          name="actividad"
-          id=""
-          checked
-        />
-        He leído y acepto la política de privacidad:
-        https://tu-url.com/politica-privacidad
 
-        <br />
-        <br />
-        <br />
-
-        <input type="submit" />
-        <input type="reset" />
-        <input
-          type="file"
-          name=""
-          id=""
-          value="Adjuntar Archivos"
-          accept=".jpg, .png"
-          multiple
-        />
+        <div class="final-buttons-container">
+          <input type="submit" />
+          <input type="reset" />
+        </div>
       </form>
 
       <!-- Creo que no me queda ningun campo del formulario por añadir   -->
