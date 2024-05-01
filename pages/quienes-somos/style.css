@@ -1,5 +1,5 @@
 .quienes-somos-container {
-  background-color: #fffab7;
+  background-color:#5B9279;
 }
 
 .quienes-somos-container img {
@@ -11,7 +11,7 @@
 }
 
 .quienes-somos-container .h-resaltado {
-  color: rgba(244, 21, 162, 0.652);
+  color: #12130F;
   font-size: 3rem;
   margin-top: 10px;
 }
@@ -19,22 +19,21 @@
 .quienes-somos-container article,
 h3.h-resaltado {
   margin: 20px;
+  text-align: center;
 }
 
-.quienes-somos-container h1.h-resaltado:hover {
-  color: Red;
-}
+
 
 .quienes-somos-container h3.h-resaltado {
   display: inline-block;
   width: 300px;
-  background-color: blue;
-  color: white;
+  background-color: #EAE6E5;
+  color: #12130F;
   font-size: 36px;
   padding: 5px;
   border-radius: 5px;
 }
 
 .quienes-somos-container h3.h-resaltado:hover {
-  color: gold;
+  color: #5B9279;
 }

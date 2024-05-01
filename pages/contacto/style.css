@@ -1,5 +1,5 @@
 body:has(> div.container_form) {
-  background-color: #fffab7;
+  background-color: #5b9279 ; 
 }
 
 .container_form {
@@ -11,8 +11,9 @@ body:has(> div.container_form) {
   margin: 20px auto;
 }
 
-.container_form .h-resaltado {
-  color: rgba(244, 21, 162);
+h2{
+  color:#12130F;
+  font-family: "Jersey 25", sans-serif;
 }
 
 fieldset {
@@ -31,9 +32,15 @@ fieldset.deportes label {
   display: block;
 }
 
+label{
+text-transform:capitalize;
+font-family: "Open Sans", sans-serif;
+}
+
 .mini-fieldsets-container {
   width: 100%;
   position: relative;
+  background-color: #8fcb9b;
 }
 
 fieldset.deportes {
@@ -59,10 +66,13 @@ fieldset.opentext textarea {
 }
 
 #archivo-label {
-  background-color: red;
+  background-color: #EAE6E5;
+  border-radius: 5px;
+  border-bottom:round;
 }
 .final-buttons-container {
   width: 100%;
   position: relative;
   left: 680px;
+ 
 }
