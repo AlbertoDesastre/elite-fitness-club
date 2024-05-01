@@ -21,13 +21,13 @@ ul {
   list-style: none;
 }
 header {
-  background-color: hotpink;
+  background-color: #5B9279;
 }
 
 nav,
 nav ul li a,
 .main h1 a:hover {
-  background-color: rgba(244, 21, 162);
+  background-color: #8fcb9b;
 }
 
 /* Iconos RRSS*/
@@ -38,13 +38,11 @@ nav ul li a,
 
 .rrss li a {
   text-decoration: none;
+  color: #EAE6E5;
 }
 
 /* Menú desplegable*/
 nav ul {
-  /* El display flex es un tipo de display que te permite hacer a un CONTENEDOR flexible.
-    Dependiendo de lo que buscas, principalmente con justify/align puedes alinear como gustes a los hijos del contenedor
-    En este caso, alineamos por defecto a sus hijos en horizontal y le pedimos que haya un espacio equivalente entre todos los elementos */
   display: flex;
   justify-content: space-between;
 }
@@ -54,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
-  background-color: rgba(244, 21, 162, 0.652);
+  background-color: #8fcb9b;
   width: 100%;
   color: white;
   padding: 10px 20px;
@@ -66,10 +64,16 @@ nav li ul {
   display: none;
 }
 
+/* resaltado según mueves el boton*/
+nav li a:hover{
+  display: block;
+  background-color:  #5b9279;
+}
+
 /* efecto boton*/
 nav ul li:hover > ul {
   display: block;
-  background-color: hotpink;
+  background-color: #5b9279;
 }
 
 .submenu {
@@ -94,13 +98,15 @@ Se aplicarán porque ese "aside h3" tiene el efecto cascada, porque está más a
 .main h1,
 .main h1 a,
 aside h3,
+aside h1,
 .h-resaltado {
-  color: rgb(255, 255, 255);
+  color: #eae6e5;
   font-family: "Jersey 25", sans-serif;
   font-style: normal;
   border-radius: 2px;
-  border-color: pink;
+  border-color: #5b9279;
   text-align: center;
+  background-color: #5b9279;
 }
 
 .logo {
@@ -111,11 +117,12 @@ aside h3,
 .main h1 a {
   font-size: 40px;
   text-decoration: none;
+  color:#12130f;
 }
 
 .main h1 a:hover,
 .h-resaltado:hover {
-  color: gold;
+  color: #EAE6E5;
 }
 
 /* Estilos específicos de HOME (o index.html) */
@@ -133,6 +140,10 @@ aside h3,
 
 .main article {
   margin-left: 10px;
+  background-color: #5B9279;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .otros-articulos,
@@ -153,7 +164,7 @@ aside h3,
 }
 
 .publi {
-  background-color: greenyellow;
+  background-color:#5B9279;
 }
 
 /* Comienza el aside */
@@ -163,20 +174,31 @@ aside {
   float: right;
   color: black;
   text-align: center;
+  background: #5b9279;
+  
 
-  background: url(./assets/img/monitores.jpg); /* <!--Imagen de Drazen Zigic en Freepik-->*/
-  background-size: cover;
-  background-position: center;
 }
 
+aside h1{
+  padding-top:2%;
+  padding-bottom: 2%;
+}
 aside h3 {
   font-size: 30px;
 }
 
+aside .image{
+  height: 100%;
+  width: 40%;
+ 
+ 
+}
+
 /* CSS para pie de página*/
 footer {
-  background-color: black;
-  color: white;
+  padding-top: 2%;
+  background-color: #5b9279;
+  color: #EAE6E5;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
