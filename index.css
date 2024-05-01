@@ -21,7 +21,7 @@ ul {
   list-style: none;
 }
 header {
-  background-color: #5B9279;
+  background-color: #5b9279;
 }
 
 nav,
@@ -38,7 +38,7 @@ nav ul li a,
 
 .rrss li a {
   text-decoration: none;
-  color: #EAE6E5;
+  color: #eae6e5;
 }
 
 /* Menú desplegable*/
@@ -65,9 +65,9 @@ nav li ul {
 }
 
 /* resaltado según mueves el boton*/
-nav li a:hover{
+nav li a:hover {
   display: block;
-  background-color:  #5b9279;
+  background-color: #5b9279;
 }
 
 /* efecto boton*/
@@ -117,12 +117,12 @@ aside h1,
 .main h1 a {
   font-size: 40px;
   text-decoration: none;
-  color:#12130f;
+  color: #12130f;
 }
 
 .main h1 a:hover,
 .h-resaltado:hover {
-  color: #EAE6E5;
+  color: #eae6e5;
 }
 
 /* Estilos específicos de HOME (o index.html) */
@@ -140,7 +140,7 @@ aside h1,
 
 .main article {
   margin-left: 10px;
-  background-color: #5B9279;
+  background-color: #5b9279;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -164,7 +164,7 @@ aside h1,
 }
 
 .publi {
-  background-color:#5B9279;
+  background-color: #5b9279;
 }
 
 /* Comienza el aside */
@@ -175,30 +175,26 @@ aside {
   color: black;
   text-align: center;
   background: #5b9279;
-  
-
 }
 
-aside h1{
-  padding-top:2%;
+aside h1 {
+  padding-top: 2%;
   padding-bottom: 2%;
 }
 aside h3 {
   font-size: 30px;
 }
 
-aside .image{
+aside .image {
   height: 100%;
   width: 40%;
- 
- 
 }
 
 /* CSS para pie de página*/
 footer {
   padding-top: 2%;
-  background-color: #5b9279;
-  color: #EAE6E5;
+  background-color: red;
+  color: #eae6e5;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
