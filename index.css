@@ -24,6 +24,10 @@ header {
   background-color: #5b9279;
 }
 
+body {
+  background-color: #5b9279;
+}
+
 nav,
 nav ul li a,
 .main h1 a:hover {
@@ -139,7 +143,6 @@ aside h1,
 }
 
 .main article {
-  margin-left: 10px;
   background-color: #5b9279;
   text-align: center;
   padding-top: 2%;
@@ -163,8 +166,35 @@ aside h1,
   height: 40px;
 }
 
+.footer-en-main {
+  background-color: #52a36f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.footer-en-main li,
+.footer-en-main article {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-en-main li {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
 .publi {
-  background-color: #5b9279;
+  background-color: #eae6e5;
+  color: black;
+  width: 40%;
+  height: 100px;
+  margin-right: 5px;
+  border-radius: 5px;
 }
 
 /* Comienza el aside */
@@ -193,7 +223,7 @@ aside .image {
 /* CSS para pie de página*/
 footer {
   padding-top: 2%;
-  background-color: red;
+  background-color: black;
   color: #eae6e5;
   text-align: center;
   font-family: "Open Sans", sans-serif;
