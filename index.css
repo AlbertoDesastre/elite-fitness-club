@@ -168,7 +168,10 @@ aside h1,
 
 .footer-en-main {
   background-color: #52a36f;
-  display: flex;
+  display: flex; /* aplicamos el display flex durante el proyecto, que lo que hace es convertir su contenedor en flexible. 
+  Esto le permite dar unas pautas de como se tienen que comportar sus hijos. Por ejemplo, le podemos decir que se justifiquen o alineen al centro,
+  izquierda o derecha a nuestra conveniencia. Es muy útil cuando necesitamos precisión a la hora de maquetar las cajas, como en 
+  este proyecto. */
   align-items: center;
   justify-content: space-around;
   gap: 5px;
