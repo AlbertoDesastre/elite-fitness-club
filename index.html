@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Hoja de estilos propias de esta página -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Hoja con propiedades para toda la web -->
-    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="shortcut icon"
-      href="../../assets/img/favicon.jpg"
+      href="./assets/img/favicon.jpg"
       type="image/x-icon"
     />
-
     <!-- biblioteca de iconos   -->
     <script
       type="module"
@@ -22,8 +18,9 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <title>Contacto</title>
+    <title>Élite Fitness Club</title>
   </head>
+
   <body>
     <header class="cabecera">
       <!-- Redes sociales-->
@@ -51,10 +48,10 @@
       <nav>
         <ul>
           <li>
-            <a href="../../index.html">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="../quienes-somos/quienes-somos.html">Quienes Somos</a>
+            <a href="./pages/quienes-somos/quienes-somos.html">Quienes Somos</a>
           </li>
           <li><a href="#">Localización</a></li>
           <li>
@@ -67,7 +64,7 @@
             </ul>
           </li>
           <li>
-            <a href="../oferta-deportiva/ofertadeportiva.html">
+            <a href="./pages/oferta-deportiva/ofertadeportiva.html">
               Oferta deportiva</a
             >
             <!-- submenu -->
@@ -82,218 +79,98 @@
               <li><a href="#">Club V.I.P</a></li>
             </ul>
           </li>
-          <li><a href="../contacto/contacto.html">Contacto</a></li>
+          <li><a href="./pages/contacto/contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <!--Barra de navegacion por la web -->
 
-    <div class="container_form">
-      <form
-        class="formulario"
-        action="mailto:aepinosa894@gmail.com"
-        method="post"
-        name="formulario"
-      >
-        <legend class="h-resaltado" id="nform">
-          <h2 id="help">En que podemos ayudarte??</h2>
-        </legend>
-        <fieldset>
-          <legend class="titform">NOMBRE Y APELLIDOS (*)</legend>
-
-          <label>
-            Nombre:
-            <input
-              type="text"
-              name="name"
-              id="name"
-              required
-              placeholder="Introduzca su nombre"
-            />
-          </label>
-          <label>
-            Apellidos:
-            <input
-              type="text"
-              name="apellidos"
-              id="apellidos"
-              required
-              placeholder="Introduzca sus apellidos"
-            />
-          </label>
-          <label>
-            e-mail:
-            <input
-              type="email"
-              name="mail"
-              id="email"
-              required
-              placeholder="Introduzca su email"
-            />
-          </label>
-          <br />
-          <label>
-            Telefono:
-            <input
-              class="relleno"
-              type="text"
-              name="tfn"
-              id="tfn"
-              min="9"
-              max="9"
-              required
-              placeholder="Ej:666 666 666"
-            />
-          </label>
-          <label>
-            Horario de contacto
-            <select name="" id="horario">
-              <option value="mañana">Mañana</option>
-              <option value="tarde">Tarde</option>
-              <option value="indiferente">Indiferente</option>
-            </select>
-          </label>
-          <span>
-            Género
-            <label>Hombre <input type="radio" name="genero" id="" /></label>
-            <label>Mujer<input type="radio" name="genero" id="" /></label>
-            <label>Otro <input type="radio" name="genero" id="" /></label>
-          </span>
-
-          <label>
-            Fecha de nacimiento
-            <input type="date" name="" id="" min="2006-01-01" required />
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend class="titform">DIRECCION POSTAL</legend>
-          <label>
-            Tipo
-            <select name="" id="tipo-calle">
-              <option value="calle">Calle</option>
-              <option value="bloque">Avenida</option>
-              <option value="camino">Camino</option>
-              <option value="carretera">Carretera</option>
-              <option value="plaza">plaza</option>
-
-            </select>
-          </label>
-          <label>
-            
-            <input type="text" name="calle" id="calle" placeholder="Nombre" />
-          </label>
-
-          <label>
-            Número:
-            <input
-              type="text"
-              name="n-calle"
-              id="n-calle"
-              placeholder="Ej: 75"
-            />
-          </label>
-          <label>
-            C.Postal:
-            <input
-              class="relleno"
-              type="text"
-              name="cp"
-              id="cp"
-              placeholder="Ej:28036"
-            />
-          </label>
-        </fieldset>
-
-        <div class="mini-fieldsets-container">
-          <fieldset class="deportes">
-            <legend class="titform">¿En que actividad estás interesad@?</legend>
-            <label
-              ><input type="checkbox" name="crossfit" id="crossfit" />Crossfit
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                name="musculacion"
-                id="musculacion"
-                checked
-              />Musculación</label
-            >
-            <label> <input type="checkbox" name="gap" id="gap" />G.A.P </label>
-            <label>
-              <input type="checkbox" name="spinning" id="spinning" />Spinning
-            </label>
-            <label>
-              <input type="checkbox" name="actividad" id="" />Pilates
-            </label>
-            <label> <input type="checkbox" name="yoga" id="yoga" />Yoga</label>
-            <label>
-              <input type="checkbox" name="poledance" id="poledance" />Poledance
-            </label>
-            <label>
-              <input type="checkbox" name="vip" id="vip" />Club V.I.P
-            </label>
-          </fieldset>
-          <fieldset class="opentext">
-            <legend class="titform">Alguna otra duda?</legend>
-
-            <textarea
-              name="opinion usuario"
-              id=""
-              cols="30"
-              rows="10"
-              minlength="35"
-              maxlength="400"
-              placeholder="Necesitaria información sobre..."
-            ></textarea>
-          </fieldset>
+    <section class="main">
+      <header>
+        <div class="banner-img-container">
+          <img src="./assets/img/inicio.jpg" />
+          <!--Imagen de Drazen Zigic en Freepik-->
         </div>
+        <h1 class="h-resaltado">
+          <a href="./pages/contacto/contacto.html"
+            >No hay excusas, <br />es la hora del GYM
+          </a>
+        </h1>
+      </header>
 
-        <fieldset>
-          <input
-            type="checkbox"
-            name="actividad"
-            id="info-comercial"
-            checked
-            required
-          />
-          <label for="info-comercial"
-            >Acepto recibir información Comercial</label
-          >
+      <article>
+        <h3>Nuevas actividades deportivas</h3>
+        <h5>06 de Abril del 2024</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />Eum,
+          at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad
+          tempore nihil deleniti molestias <br />in porro laboriosam temporibus,
+          cumque deserunt ullam.
+          <br>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />Eum,
+          at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad
+          tempore nihil deleniti molestias <br />in porro laboriosam temporibus,
+          cumque deserunt ullam.
+        </p>
+      </article>
 
-          <br />
+      <footer class="footer-en-main">
+        <ul class="otros-articulos">
+          <h2>Más sobre nosotros</h2>
 
-          <input
-            type="checkbox"
-            name="actividad"
-            id="privacidad"
-            checked
-            required
-          />
-          <label for="privacidad">
-            He leído y acepto la política de privacidad:
-            https://tu-url.com/politica-privacidad</label
-          >
-
-          <br />
-          <br />
-
-          <label for="archivo" id="archivo-label"> Adjuntar DNI</label>
-          <input
-            style="visibility: hidden"
-            type="file"
-            id="archivo"
-            accept=".jpg, .png"
-            multiple
-          />
-        </fieldset>
-
-        <div class="final-buttons-container">
-          <input type="submit" />
-          <input type="reset" />
+          <li>
+            <img src="./assets/icons/workout.png" />
+            <article>
+              <h4>Oferta especial</h4>
+              <br>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                omnis eaque fuga eligendi.
+                <br />Eum,
+                at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad
+                tempore nihil deleniti molestias <br />in porro laboriosam temporibus,
+                cumque deserunt ullam.
+              </p>
+            </article>
+          </li>
+        </ul>
+        <!--banner publicidad-->
+        <!-- esto es el recuadro con la publicidad, que tiene una imagen de fondo, y un link random -->
+        <div class="publi">
+          <h4>Si eres nutricionista colabora con <br />nosotros</h4>
         </div>
-      </form>
+      </footer>
+    </section>
 
-    </div>
+    <!-- Aside con más info -->
+
+    <aside>
+      <h1>APROVECHA NUESTRAS OFERTAS <br />NO ESPERES MAS</h1>
+      <div class="image">
+        <img src="./assets/img/monitores.jpg" alt="" width="100%" weight="40%" >
+      </div>
+      <article>
+        <h3>No entrenes solo</h3>
+        <h4>Contamos con los mejores monitores</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />Eum,
+          at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad
+          tempore nihil deleniti molestias <br />in porro laboriosam temporibus,
+          cumque deserunt ullam.
+        </p>
+      </article>
+
+      <article>
+        <h3>Club V.I.P</h3>
+        <h4>Todas las comodidades que mereces</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />Eum,
+          at. Ea impedit quos aliquam doloremque tempora voluptatum aliquid ad
+          tempore nihil deleniti molestias <br />in porro laboriosam temporibus,
+          cumque deserunt ullam.
+        </p>
+      </article>
+    </aside>
 
     <!-- píe de pagina  -->
     <footer class="derechos">
